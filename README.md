@@ -7,7 +7,7 @@
 | Tester| &#10007; |
 | Docs| &#10007; |
 | References| &#10007; |
-| Utils| &#10007; |
+| Utils| :heavy_check_mark: |
 
 The project is still a work in progress and I will continue working on it. ETA: end of 2024
 
