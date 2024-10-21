@@ -1,0 +1,32 @@
+# Use Alpine as the base image (super small in size)
+FROM alpine:latest
+
+# Install dependencies
+RUN apk update && apk add \
+    make \
+    gcc \
+    gdb \
+    musl-dev \
+    readline-dev \ 
+    vim \
+    valgrind \
+    && apk add --no-cache --virtual .build-deps
+
+# Set app directory as the base location
+WORKDIR /app
+
+# Copy over files from host machine to container
+COPY ./Makefile /app/
+COPY ./src /app/src/
+COPY ./libft /app/libft/
+COPY ./include /app/include/
+
+# Fix Alpine Readline issues
+RUN echo '#include <stdio.h>' | cat - /usr/include/readline/rltypedefs.h > tmp && mv tmp /usr/include/readline/rltypedefs.h \
+    && echo '#include <stdio.h>' | cat - /usr/include/readline/readline.h > tmp && mv tmp /usr/include/readline/readline.h
+
+# Set the entry point to a shell
+ENTRYPOINT ["/bin/sh"]
+
+# Default to a shell
+CMD ["-i"]
