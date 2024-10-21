@@ -36,3 +36,9 @@ A pretty big registry of documentation about the different parts of Minishell an
 A list of all the references I used to complete Minishell and to find more info about how bash does things in the background. This also has some of my favorite Minishell's linked so you can check these out.
 
 [Link To Feature](https://github.com/Quinten-14/42-MinishellToolkit/)
+
+**Utils**
+
+A bunch of small tools that can help you in Minishell. This can go from valgrindrc files to test tools. These are really made to make you find smaller issues or to make life a little bit less painfull when you mess up.
+
+[Link To Feature](https://github.com/Quinten-14/42-MinishellToolkit/)
