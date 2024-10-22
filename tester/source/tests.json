@@ -1,0 +1,13 @@
+[
+  {
+    "name": "Test Echo",
+    "command": "echo Hello",
+    "expected": "Hello\n"
+  },
+  {
+    "name": "Test Pwd",
+    "command": "pwd",
+    "expected": "/your/expected/path\n"
+  }
+]
+
