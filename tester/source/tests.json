@@ -9,7 +9,7 @@
         "index": 2,
         "name": "Test Pwd",
         "command": "pwd",
-        "expected": "$(pwd)"
+        "expected": "$(PWD)"
     }
 ]
 

@@ -1,6 +1,6 @@
 {
-    "minishell_path": "/nfs/homes/qraymaek/42-ContainerRuntime/minishell",
-    "tests_file": "/nfs/homes/qraymaek/42-ContainerRuntime/tester/source/tests.json",
+    "minishell_path": "/Users/qraymaekers/42-MinishellToolkit/minishell",
+    "tests_file": "/Users/qraymaekers/42-MinishellToolkit/tester/source/tests.json",
     "logs_path": "/path/to/logs.log",
     "test_timeout": 5,
     "custom_tests": false,
