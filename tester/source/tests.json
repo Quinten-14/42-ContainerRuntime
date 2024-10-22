@@ -1,13 +1,15 @@
 [
-  {
-    "name": "Test Echo",
-    "command": "echo Hello",
-    "expected": "Hello\n"
-  },
-  {
-    "name": "Test Pwd",
-    "command": "pwd",
-    "expected": "/your/expected/path\n"
-  }
+    {
+        "index": 1,
+        "name": "Test Echo",
+        "command": "echo hello world",
+        "expected": "hello world"
+    },
+    {
+        "index": 2,
+        "name": "Test Pwd",
+        "command": "pwd",
+        "expected": "$(pwd)"
+    }
 ]
 
